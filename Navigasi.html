@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Profile Page</title>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-mobile">
+            <a href="#" onclick="showMenu()">Menu</a>
+
+        </div>
+        <ul id="menu">
+              <li><a href="beranda.html">Beranda</a></li>  
+              <li><a href="product.html">Product</a></li>
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="pengaturan.html">Pengaturan</a></li>
+              <li><a href="data admin.html">Data Admin</a></li>        
+               
+        </ul>
+    </nav>
+    <section id="box-profile">
+        <div class="img-profile">
+           <div class="photo" style="background-image:url(Assets/img/Foto.jpg)"></div>
+          
+        </div>
+        <div class="description">
+            <h1>Bayu Rizqi Fachreza Ramadhan</h1>
+        <p>Programmer and Web Designer</p>
+        <a href="#" class="button bg-green">Kontak</a>
+        <a href="#"class="button border-blue">Facebook</a>
+       
+    </div>
+    <div class="information">
+        <div class="data">
+        <p class="field">Ada</p>
+        </div>
+        <div class="data">
+            <p class="field">Usia : </p>
+            <p class="text-gray">16</p>
+        </div>
+        <div class="data">
+        <p class="field">Alamat : </p>
+                <p class="text-gray">Puri Cempaka Putih 2 AS 7</p>
+            </div>
+            <div class="data">
+                    <p class="field">Lokasi : </p>
+                    <p class="text-gray">Jawa Timur,Kota Malang</p>
+                </div>
+                
+    </div>
+    </section>
+    <section id="input-form">
+        <form method="#" action="#"></form>
+        <div class="form">
+        <label>Nama :</label>
+        <input type="text" name="Nama">
+    </div>
+    <div class="form">
+            <label>Usia :</label>
+            <input type="number" name="Usia">
+        </div>
+        <div class="form">
+                <label>Alamat :</label>
+                <input type="text" name="Alamat">
+            </div>
+            <div class="form">
+                    <label>TTL :</label>
+                    <input type="text" name="Tempat Tanggal Lahir">
+                </div>
+                <div class="form">
+                        <label>Lokasi :</label>
+                        <input type="text" name="Lokasi">
+                    </div>
+                    <div class="form">
+                            <label>Email :</label>
+                            <input type="email" name="Email">
+                        </div>
+                        <div class="form">
+                            <input type="submit" name="Submit" value="SUBMIT" class="bg-blue">
+                        </div>
+    </section>
+    <script>
+    function showMenu(){
+        var menu = document.getElementById("menu");
+        var box = document.getElementById("box-profile");
+
+        if(menu.style.display === "block"){
+            menu.style.display ="none";
+            box.style.paddingTop="0px";
+        }else{
+            menu.style.display="block";
+            box.style.paddingTop="125px";
+        }
+    }
+    </script>
+</body>
+</html>
